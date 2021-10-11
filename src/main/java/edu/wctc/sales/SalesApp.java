@@ -8,5 +8,7 @@ public class SalesApp {
                 new AnnotationConfigApplicationContext();
         context.register(AppConfig.class);
         context.refresh();
+
+        ((SaleCalculator).getBean("saleCalculator")).SaleCalculator();
     }
 }
